@@ -7,9 +7,7 @@ Per importare ed utilizzare un componente dentro ad un altro devo SEMPRE seguire
 */
 
 //1. Importazione del componente
-import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
 import axios from 'axios';
 
 export default {
@@ -20,9 +18,7 @@ export default {
   },
   // 2. Dichiarazione del componente
   components: {
-    AppHeader,
-    AppMain,
-    AppFooter
+    AppHeader
   },
   beforeCreate(){
     console.log('Before Create');
@@ -36,8 +32,6 @@ export default {
 <template>
   <!--3. Utilizzo del componente-->
   <AppHeader />
-  <AppMain />
-  <AppFooter />
 </template>
 
 <style lang="scss">
