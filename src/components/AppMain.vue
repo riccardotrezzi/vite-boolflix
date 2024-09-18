@@ -31,6 +31,7 @@ export default {
                 :originalTitle="movie.original_title"
                 :language="movie.original_language"
                 :vote="movie.vote_average"
+                :posterPath="movie.poster_path"
               />
 
               <hr>
@@ -53,6 +54,7 @@ export default {
                 :originalTitle="serie.original_name"
                 :language="serie.original_language"
                 :vote="serie.vote_average"
+                :posterPath="serie.poster_path"
               />
               
               <hr>
